@@ -1,8 +1,7 @@
 package controller;
 
-
 import DAO.DAOUsuarios;
-import TO.TOusuario;
+//import TO.TOusuario;
 import java.util.ArrayList;
 
 public class CtrlUsuarios {
@@ -17,7 +16,7 @@ public class CtrlUsuarios {
         return usuariosDAO.consultarUsuarios();
     }
 
-    public int inserarUsuarios(TO.TOusuario tOUsuarios) {
+    public int insertarUsuarios(TO.TOusuario tOUsuarios) {
         return usuariosDAO.insertarUsuarios(tOUsuarios);
     }
 
