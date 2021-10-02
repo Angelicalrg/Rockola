@@ -24,18 +24,8 @@ public class DAOListaReproduccion{
 			ResultSet rs = con.consultar(nombreTabla);
 			while (rs.next()) {
 				TOListasReproduccion = new TOListaReproduccion();
-				TOListasReproduccion.setApellidos(rs.getString("apellidos"));
-				TOListasReproduccion.setClave(rs.getString("clave"));
-				TOListasReproduccion.setDireccion(rs.getString("direccion"));
-				TOListasReproduccion.setFecha(rs.getDate("fechaNacimiento"));
-				TOListasReproduccion.setGenero(rs.getString("genero"));
-				TOListasReproduccion.setCorreo(rs.getString("correo"));
 				TOListasReproduccion.setIdUsuarios(rs.getInt("idusuarios"));
-				TOListasReproduccion.setIdentificacion(rs.getString("identificacion"));
-				TOListasReproduccion.setNombres(rs.getString("nombres"));
-				TOListasReproduccion.setTelefono(rs.getString("telefono"));
-				TOListasReproduccion.setTipoUsuario(rs.getString("tipoUsuario"));
-				TOListasReproduccion.setUsuario(rs.getString("usuario"));
+				TOListasReproduccion.setIdListaReproduccion(rs.getInt("idListaReproduccion"));
 				TOListasReproduccion.setNombreLista(rs.getString("nombreLista"));
 				TOListasReproduccion.setFechaCreacion(rs.getDate("fechaCreacion"));
 

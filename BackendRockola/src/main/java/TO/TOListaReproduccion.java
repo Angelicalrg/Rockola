@@ -4,6 +4,7 @@ import java.sql.Date;
 
 public class TOListaReproduccion extends TOusuario{
 	
+	private int idListaReproduccion;
 	private String nombreLista;
 	private Date FechaCreacion;
 	private String genero;
@@ -22,6 +23,14 @@ public class TOListaReproduccion extends TOusuario{
     }
 	
 	//Getters y Setters
+	
+	public int getIdListaReproduccion() {
+		return idListaReproduccion;
+	}
+
+	public void setIdListaReproduccion(int idListaReproduccion) {
+		this.idListaReproduccion = idListaReproduccion;
+	}
 
 	public String getNombreLista() {
 		return nombreLista;
